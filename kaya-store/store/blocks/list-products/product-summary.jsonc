@@ -1,0 +1,29 @@
+// {
+// 	"list-context.product-list#products": {
+// 		"blocks": ["product-summary.shelf#productList"],
+// 		"props": {
+// 			"category": "kit-upmedal/corinthians"
+// 		},
+// 		"children": ["slider-layout#shelf"]
+// 	},
+// 	"slider-layout#shelf": {
+// 		"props": {
+// 			"itemsPerPage": {
+// 				"desktop": 2
+// 			},
+// 			"blockClass": "listProduct"
+// 		}
+// 	},
+// 	"product-summary.shelf#productList": {
+// 		"children": [
+// 			"product-summary-name",
+// 			"product-summary-image",
+// 			"product-summary-attachment-list",
+// 			"product-rating-inline",
+// 			"product-summary-space",
+// 			"product-summary-price",
+// 			"add-to-cart-button"
+// 		]
+// 	}
+// }
+{}

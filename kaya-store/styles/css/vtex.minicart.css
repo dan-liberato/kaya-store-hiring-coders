@@ -1,0 +1,8 @@
+.openIconContainer :global(.vtex-button):hover {
+	background: #303030;
+	border-radius: 50%;
+}
+
+.cartIcon {
+	color: #fff;
+}

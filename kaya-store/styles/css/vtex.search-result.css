@@ -1,0 +1,44 @@
+.gallery--home {
+	max-width: 912px;
+	min-height: 320px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 0 20px 50px 20px;
+}
+
+.searchResultContainer--page-search {
+	padding-top: 0;
+}
+
+.searchResultContainer--page-search
+	:global(.vtex-store-components-3-x-container) {
+	display: none;
+}
+
+.totalProducts--layout {
+	color: #5bf904;
+}
+
+.galleryTitle--layout {
+	color: #5bf904;
+}
+
+.orderBy--layout {
+	margin-top: 33px;
+}
+
+.filterPopupTitle {
+	color: #fff;
+}
+
+.filterPopupArrowIcon {
+	color: #5bf904;
+}
+
+.filter__container--title {
+	color: #fff;
+}
+
+.filter__container {
+	color: #c2c2c2;
+}

@@ -1,0 +1,21 @@
+.stretchChildrenWidth--summary {
+	color: #59ff00;
+	font-weight: bold;
+	font-size: 1rem;
+	max-width: 30%;
+	padding: 12px 10px 0 10px;
+	margin: 20px 0;
+}
+
+/* Product Page */
+.flexColChild--product-page {
+	margin: 20px 0;
+}
+
+.flexColChild--product-details {
+	max-width: 803px;
+}
+
+.flexCol--product-details {
+	padding-bottom: 100px;
+}

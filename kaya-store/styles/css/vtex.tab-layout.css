@@ -1,0 +1,42 @@
+.listItem--item-tab {
+	padding: 0;
+	margin: 0;
+}
+
+.listItemActive :global(.vtex-button) {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #5bf904;
+	color: #5bf904;
+	border-radius: 0;
+}
+
+.listItem :global(.vtex-button):hover {
+	background-color: transparent;
+	border-bottom: 2px solid #5bf904;
+	color: #5bf904;
+	border-radius: 0;
+}
+
+.contentContainer--tabs {
+	background: #303030;
+}
+
+/* Product Page */
+.flexColChild--product-page {
+	margin: 20px 0;
+}
+
+.container--tab-product-details {
+	border-radius: 5px;
+	background: #424242;
+	margin: 20px 0;
+}
+
+.listContainer--product-details {
+	justify-content: space-between;
+}
+
+.contentContainer--tab-content {
+	padding: 20px;
+}

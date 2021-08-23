@@ -1,0 +1,32 @@
+# query productList {
+#  products(query: "upmodal", map:"c,b") {
+#     brand
+#     brandId
+#     cacheId
+#     categoryId
+#     description
+#     link
+#     linkText
+#     productId
+#     productName
+#     productReference
+#     titleTag
+#     metaTagDescription
+#     jsonSpecifications
+#     releaseDate
+#   }
+# }
+
+# # query productList {
+# #   products {
+# #     brand
+# #     cacheId
+# #     categoryId
+# #     description
+# #     link
+# #     linkText
+# #     productId
+# #     productName
+# #     productReference
+# #   }
+# # }

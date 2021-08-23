@@ -1,0 +1,131 @@
+{
+	"search-result-layout.customQuery#Corinthians": {
+		"blocks": [
+			"search-result-layout.desktop#corinthians",
+			"search-result-layout.mobile#corinthians"
+		],
+		"props": {
+			"querySchema": {
+				"orderByField": "OrderByReleaseDateDESC",
+				"hideUnavailableItems": true,
+				"maxItemsPerPage": 8,
+				"queryField": "Corinthians",
+				"mapField": "ft",
+				"skusFilter": "ALL_AVAILABLE"
+			},
+			"defaultGalleryLayout": true
+		}
+	},
+	"search-result-layout.desktop#corinthians": {
+		"children": ["flex-layout.row#corinthians"],
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": true,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	"flex-layout.row#corinthians": {
+		"children": ["flex-layout.col#corinthians"],
+		"props": {
+			"preventHorizontalStretch": true,
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#corinthians": {
+		"children": ["search-content#corinthians"],
+		"props": {
+			"width": "grow",
+			"preventVerticalStretch": true
+		}
+	},
+	"search-content#corinthians": {
+		"blocks": ["gallery#corinthians", "not-found"]
+	},
+	"gallery#corinthians": {
+		"props": {
+			"layouts": [
+				{
+					"name": "whole",
+					"component": "OneOrTwoLineSummary",
+					"itemsPerRow": 2
+				}
+			],
+			"OneOrTwoLineSummary": "product-summary.shelf#corinthians",
+			"blockClass": "home"
+		}
+	},
+	// Mobile
+	"search-result-layout.mobile#corinthians": {
+		"children": ["flex-layout.row#corinthians-mobile"],
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": true,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	"flex-layout.row#corinthians-mobile": {
+		"children": ["flex-layout.col#corinthians-content-mobile"],
+		"props": {
+			"preventHorizontalStretch": true,
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#corinthians-content-mobile": {
+		"children": ["search-content#corinthians-mobile"],
+		"props": {
+			"width": "grow",
+			"preventVerticalStretch": true
+		}
+	},
+	"search-content#corinthians-mobile": {
+		"blocks": ["gallery#corinthians-mobile", "not-found"]
+	},
+	"gallery#corinthians-mobile": {
+		"props": {
+			"layouts": [
+				{
+					"name": "whole",
+					"component": "OneOrTwoLineSummary",
+					"itemsPerRow": 1
+				}
+			],
+			"OneOrTwoLineSummary": "product-summary.shelf#corinthians",
+			"blockClass": "home"
+		}
+	},
+	"product-summary.shelf#corinthians": {
+		"props": {
+			"blockClass": "product"
+		},
+		"children": [
+			"product-summary-name",
+			"product-summary-image",
+			"flex-layout.row#corinthians-product-mobile"
+		]
+	},
+	"flex-layout.row#corinthians-product-mobile": {
+		"children": [
+			"product-selling-price#corinthians-mobile",
+			"add-to-cart-button#corinthians-mobile"
+		]
+	},
+	"product-selling-price#corinthians-mobile": {
+		"props": {
+			"blockClass": "summary"
+		}
+	},
+	"add-to-cart-button#corinthians-mobile": {
+		"props": {
+			"onClickBehavior": "go-to-product-page",
+			"isOneClickBuy": false,
+			"text": "Ver Detalhes",
+			"blockClass": "home"
+		}
+	}
+}

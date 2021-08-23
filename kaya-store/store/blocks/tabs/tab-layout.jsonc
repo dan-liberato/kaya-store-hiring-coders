@@ -1,0 +1,265 @@
+{
+	"tab-layout#home-list": {
+		"props": {
+			"blockClass": "tab-menu",
+			"defaultActiveTabId": "promocao"
+		},
+		"children": ["tab-list#home-list"]
+	},
+	"tab-list#home-list": {
+		"children": ["slider-layout#tab-menu", "tab-content#home"]
+	},
+	"tab-list.item#promo": {
+		"props": {
+			"tabId": "promocao",
+			"label": "Promoção",
+			"blockClass": "item-tab",
+			"defaultActiveTab": true
+		}
+	},
+
+	"tab-list.item#palmeiras": {
+		"props": {
+			"tabId": "palmeiras",
+			"label": "Palmeiras",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#corinthians": {
+		"props": {
+			"tabId": "corinthians",
+			"label": "Corinthians",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#bones": {
+		"props": {
+			"tabId": "bones",
+			"label": "Bonés",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games1": {
+		"props": {
+			"tabId": "games1",
+			"label": "Games 1",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games2": {
+		"props": {
+			"tabId": "games2",
+			"label": "Games 2",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games3": {
+		"props": {
+			"tabId": "games3",
+			"label": "Games 3",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games4": {
+		"props": {
+			"tabId": "games4",
+			"label": "Games 4",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games5": {
+		"props": {
+			"tabId": "games5",
+			"label": "Games 5",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games6": {
+		"props": {
+			"tabId": "games6",
+			"label": "Games 6",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games7": {
+		"props": {
+			"tabId": "games7",
+			"label": "Games 7",
+			"blockClass": "item-tab"
+		}
+	},
+
+	"tab-list.item#games8": {
+		"props": {
+			"tabId": "games8",
+			"label": "Games 8",
+			"blockClass": "item-tab"
+		}
+	},
+	"slider-layout#tab-menu": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 9,
+				"tablet": 2,
+				"phone": 1
+			},
+			"infinite": false,
+			"showPaginationDots": false,
+			"showNavigationArrows": "always",
+			"fullWidth": true,
+			"arrowSize": "15px",
+			"centerMode": "center",
+			"blockClass": "tabs-list-item"
+		},
+		"children": [
+			"tab-list.item#promo",
+			"tab-list.item#palmeiras",
+			"tab-list.item#corinthians",
+			"tab-list.item#bones",
+			"tab-list.item#games1",
+			"tab-list.item#games2",
+			"tab-list.item#games3",
+			"tab-list.item#games4",
+			"tab-list.item#games5",
+			"tab-list.item#games6",
+			"tab-list.item#games7",
+			"tab-list.item#games8"
+		]
+	},
+
+	"tab-content.item#promo": {
+		"children": [
+			"slider-layout#offers",
+			"leads-modal-form",
+			"search-result-layout.customQuery#home"
+		],
+		"props": {
+			"tabId": "promocao"
+		}
+	},
+
+	"tab-content.item#palmeiras": {
+		"children": [
+			"slider-layout#offers",
+			"search-result-layout.customQuery#Palmeiras"
+		],
+		"props": {
+			"tabId": "palmeiras"
+		}
+	},
+
+	"tab-content.item#corinthians": {
+		"children": [
+			"slider-layout#offers",
+			"search-result-layout.customQuery#Corinthians"
+		],
+		"props": {
+			"tabId": "corinthians"
+		}
+	},
+
+	"tab-content.item#bones": {
+		"children": [],
+		"props": {
+			"tabId": "bones"
+		}
+	},
+
+	"tab-content.item#games1": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games1"
+		}
+	},
+
+	"tab-content.item#games2": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games2"
+		}
+	},
+
+	"tab-content.item#games3": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games3"
+		}
+	},
+
+	"tab-content.item#games4": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games4"
+		}
+	},
+
+	"tab-content.item#games5": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games5"
+		}
+	},
+
+	"tab-content.item#games6": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games6"
+		}
+	},
+
+	"tab-content.item#games7": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games7"
+		}
+	},
+
+	"tab-content.item#games8": {
+		"children": ["slider-layout"],
+		"props": {
+			"tabId": "games8"
+		}
+	},
+
+	"tab-content#home": {
+		"children": [
+			"tab-content.item#promo",
+			"tab-content.item#palmeiras",
+			"tab-content.item#corinthians",
+			"tab-content.item#bones",
+			"tab-content.item#games1",
+			"tab-content.item#games2",
+			"tab-content.item#games3",
+			"tab-content.item#games4",
+			"tab-content.item#games5",
+			"tab-content.item#games6",
+			"tab-content.item#games7",
+			"tab-content.item#games8"
+		],
+		"props": {
+			"blockClass": "tabs"
+		}
+	},
+	"leads-modal-form": {
+		"props": {
+			"title": "Cadastre-se para ganhar um cupom especial",
+			"imageUrl": "assets/banner/discount-banner.jpg",
+			"imageAlt": "Ganhe um cupom",
+			"placeholders": {
+				"name": "Nome",
+				"email": "E-mail",
+				"phone": "Telefone"
+			},
+			"blockClass": "modal"
+		}
+	}
+}

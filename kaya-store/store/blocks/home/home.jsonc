@@ -1,0 +1,57 @@
+{
+	"store.home": {
+		"blocks": [
+			// "countdown",
+			// "countdown.title",
+			// "countdown.productList",
+			"tab-layout#home-list",
+			// "tab-layout#home-content",
+			// "slider-layout#offers",
+			// "list-context.product-list#products",
+			// "search-result-layout.customQuery#home",
+			"responsive-layout.desktop",
+			"responsive-layout.mobile",
+			"back-to-top-button"
+		]
+	},
+	"back-to-top-button": {
+		"props": {
+			"displayThreshold": 700,
+			"display": "Back"
+		}
+	}
+	// "sticky-layout.stack-container": {
+	// 	"props": {
+	// 		"position": "top"
+	// 	},
+	// 	"children": ["sticky-layout#home-tabs"]
+	// },
+	// "sticky-layout#home-tabs": {
+	// 	"props": {
+	// 		"blockClass": "sticky-header"
+	// 	},
+	// 	"children": ["tab-layout#home-list"]
+	// },
+	// "sticky-layout.stack-container": {
+	// 	"props": {
+	//        "position": "top"
+	//     },
+	//     "children": ["sticky-layout#home-tabs"]
+	// }
+	// "flex-layout.row#home": {
+	//     "children": ["tab-layout#test"],
+	// 	"props": {
+	// 		"horizontalAlign": "center",
+	// 		"verticalAlign": "center",
+	// 		"preventHorizontalStretch": true,
+	// 		"preventVerticalStretch": true,
+	// 		"fullWidth": true
+	// 	}
+	// },
+
+	// "countdown.productList": {
+	// 	"props": {
+	// 		"test": "haha"
+	// 	}
+	// },
+}

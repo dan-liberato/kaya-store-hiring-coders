@@ -1,0 +1,87 @@
+.container {
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 20px;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	color: #fff;
+}
+
+.content {
+	max-width: 921px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerImage {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+}
+.imageBanner {
+	max-width: 350px;
+	object-fit: contain;
+}
+
+.containerForm {
+	padding: 0 20px;
+}
+
+.form {
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.formField {
+	margin-bottom: 10px;
+}
+
+.formInput,
+.formButton {
+	border: none;
+	height: 30px;
+	padding: 8px 12px;
+	width: 300px;
+}
+
+.formInput {
+	color: #fff;
+	background: #303030;
+	border-bottom: 2px solid #fff;
+}
+
+.formInput:hover,
+.formInput:focus,
+.formInput:active,
+.formInput:focus-within {
+	color: #5bf904;
+	border-color: #5bf904;
+}
+
+.formButton {
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #5bf904;
+	padding: 6px 0;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.content {
+		flex-flow: row;
+	}
+}

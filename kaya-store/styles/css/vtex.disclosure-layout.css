@@ -1,0 +1,13 @@
+.trigger--product-details {
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 5px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+.trigger--product-details:hover {
+	color: #5bf904;
+	border-color: #5bf904;
+}

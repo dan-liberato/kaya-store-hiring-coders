@@ -1,0 +1,147 @@
+{
+	"tab-layout#product-details": {
+		"props": {
+			"blockClass": "tab-product-details",
+			"defaultActiveTabId": "description"
+		},
+		"children": ["tab-list#product-details", "tab-content#products-details"]
+	},
+	"tab-list#product-details": {
+		"props": {
+			"blockClass": "product-details"
+		},
+		"children": [
+			"tab-list.item#description",
+			"tab-list.item#testimonials",
+			"tab-list.item#doubts"
+		]
+	},
+	"tab-list.item#description": {
+		"props": {
+			"tabId": "description",
+			"label": "Descrição",
+			"blockClass": "tab-item",
+			"defaultActiveTab": true
+		}
+	},
+
+	"tab-list.item#testimonials": {
+		"props": {
+			"tabId": "testimonials",
+			"label": "Depoimentos",
+			"blockClass": "tab-item"
+		}
+	},
+
+	"tab-list.item#doubts": {
+		"props": {
+			"tabId": "doubts",
+			"label": "Dúvidas",
+			"blockClass": "tab-item"
+		}
+	},
+
+	// Tab Content
+	"tab-content.item#description": {
+		"children": ["product-description#product-details"],
+		"props": {
+			"tabId": "description"
+		}
+	},
+
+	"tab-content.item#testimonials": {
+		"children": [
+			"product-reviews#product-details",
+			"product-rating-inline"
+		],
+		"props": {
+			"tabId": "testimonials"
+		}
+	},
+
+	"tab-content.item#doubts": {
+		"children": ["disclosure-layout-group#group"],
+		"props": {
+			"tabId": "doubts"
+		}
+	},
+
+	"tab-content#products-details": {
+		"children": [
+			"tab-content.item#description",
+			"tab-content.item#testimonials",
+			"tab-content.item#doubts"
+		],
+		"props": {
+			"blockClass": "tab-content"
+		}
+	},
+	"product-description#product-details": {
+		"props": {
+			"blockClass": "product-details"
+		}
+	},
+	"product-reviews#product-details": {
+		"props": {
+			"blockClass": "product-details"
+		}
+	},
+	"disclosure-layout-group#group": {
+		"children": ["flex-layout.col#product-details-dubts"]
+	},
+
+	"flex-layout.col#product-details-dubts": {
+		"props": {
+			"blockClass": "product-details"
+		},
+		"children": ["disclosure-layout#first", "disclosure-layout#second"]
+	},
+
+	"disclosure-layout#first": {
+		"children": ["disclosure-trigger#first", "disclosure-content#first"]
+	},
+	"disclosure-trigger#first": {
+		"props": {
+			"blockClass": "product-details"
+		},
+		"children": ["rich-text#question1"]
+	},
+	"disclosure-content#first": {
+		"children": ["rich-text#answer1"]
+	},
+	"rich-text#question1": {
+		"props": {
+			"text": "Como funciona?",
+			"blockClass": "product-details"
+		}
+	},
+	"rich-text#answer1": {
+		"props": {
+			"text": "1. Inscreva-se na prova escolhendo a distância e o kit que desejar."
+		}
+	},
+
+	"disclosure-layout#second": {
+		"children": ["disclosure-trigger#second", "disclosure-content#second"]
+	},
+	"disclosure-trigger#second": {
+		"props": {
+			"blockClass": "product-details"
+		},
+		"children": ["rich-text#question2"]
+	},
+	"disclosure-content#second": {
+		"children": ["rich-text#answer2"]
+	},
+	"rich-text#question2": {
+		"props": {
+			"text": "Quando recebo meu kit?",
+			"blockClass": "product-details"
+		}
+	},
+	"rich-text#answer2": {
+		"props": {
+			"text": "A medalha e kit escolhido só vão ser entregues depois que você fizer a prova e confirmar o seu endereço de entrega. *não vamos entregar medalhas para quem não completar a prova."
+		}
+	}
+}

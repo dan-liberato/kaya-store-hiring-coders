@@ -1,0 +1,71 @@
+.searchBarContainer {
+	background: #212121;
+	width: 600px;
+}
+.searchBarContainer :global(.vtex-input-prefix__group) {
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid #e3e4e6;
+}
+.searchBarContainer :global(.vtex-input-prefix__group):hover {
+	border-color: #5bf904;
+}
+
+.searchIcon--navbar {
+	color: #fff;
+}
+
+.closeIcon--navbar {
+	color: #5bf904;
+}
+
+.imageElement--carouselImage {
+	border-radius: 20px;
+}
+
+/* .carouselGaleryThumbs--slider {
+	display: none;
+}
+
+.carouselGaleryCursor {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+} */
+
+/* .swiperCaret--slider {
+	z-index: 9999999;
+	bottom: 1px;
+} */
+/* .carouselGaleryCursor,
+.productImagesGallerySwiperContainer--slider,
+.productImageTag--slider,
+.productImageTag--main,
+.productImageTag--slider-main {
+	cursor: default;
+} */
+
+/* Product Page */
+.productImageTag--product-details--main {
+	margin: 20px 0 30px 0;
+}
+
+.productNameContainer--product-details {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+.productDescriptionTitle--product-details {
+	color: #fff;
+	font-weight: bold;
+}
+
+.price_sellingPriceContainer--product-details {
+	color: #5bf904;
+}
+
+.shippingContainer {
+	margin-bottom: 20px;
+}

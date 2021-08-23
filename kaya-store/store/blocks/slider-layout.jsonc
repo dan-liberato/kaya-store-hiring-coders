@@ -1,0 +1,29 @@
+{
+	"slider-layout#offers": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"blockClass": "carousel"
+		},
+		"children": ["image#offer1", "image#offer2"]
+	},
+	"image#offer1": {
+		"props": {
+			"src": "assets/slider/BANNER-WOOD.png",
+			"link": "/",
+			"blockClass": "carouselImage"
+		}
+	},
+	"image#offer2": {
+		"props": {
+			"src": "assets/slider/grandes-guerreiros.png",
+			"link": "/",
+			"blockClass": "carouselImage"
+		}
+	}
+}
