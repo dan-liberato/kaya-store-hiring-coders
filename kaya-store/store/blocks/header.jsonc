@@ -84,7 +84,7 @@
 		"props": {
 			"verticalAlign": "left"
 		},
-		"children": ["logo"] 
+		"children": ["logo"]
 	},
 	"drawer": {
 		"children": []
